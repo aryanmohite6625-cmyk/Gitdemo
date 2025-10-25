@@ -1,12 +1,10 @@
-a=(float(input("Enter First Number: ")))
-b=(float(input("Enter Second Number: ")))
+import os
+file_name="sample.txt"
+if os.path.exists(file_name):
+    print("Reading file content:")
+    fh = open(file_name, "rt")
+    content = fh.read()
+    print(content)
 
-
-c=a+b
-print("Addition:", c)
-d=a-b
-print("Subtraction:", d)
-e=a*b
-print("Multiplication:", e)
-f=a/b
-print("Division:", f)
+else:
+    print(f"Error: file {file_name} doesn't exist! ")
