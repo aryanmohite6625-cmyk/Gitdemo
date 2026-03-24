@@ -24,7 +24,7 @@ def on_submit():
     output_text = f"Your name is {name}.\n"
     output_text += f"Your date of birth is {dob}.\n"
     output_text += f"E-mail: {email_entry.get()}\n"
-    output_text += f"{name} is from {branch} Department.\n"
+    output_text += f"{name} is interested in {branch} Department.\n"
     output_text += f"Your response:  {responce}\n"
 
     if selected_games:
@@ -55,7 +55,7 @@ tk.Label(main_frame, text="Enter E-mail:", font=("Arial", 10, "bold")).grid(row=
 email_entry = tk.Entry(main_frame, width=30)
 email_entry.grid(row=1, column=3, sticky="w", padx=10)
 
-tk.Label(main_frame, text="Select Your Branch:", font=("Arial", 10, "bold")).grid(row=2, column=0, sticky="w", pady=10)
+tk.Label(main_frame, text="Branch Interseted:", font=("Arial", 10, "bold")).grid(row=2, column=0, sticky="w", pady=10)
 branch_var = tk.StringVar(value="Ai & Ds")
 tk.Radiobutton(main_frame, text="Ai & Ds", variable=branch_var, value="Ai & Ds").grid(row=2, column=1, sticky="w", padx=10)
 tk.Radiobutton(main_frame, text="Computer Engineering", variable=branch_var, value="Computer Engineering").grid(row=2, column=2, sticky="w", padx=10)
