@@ -36,7 +36,7 @@ def on_submit():
     output_label.config(text=output_text)
 
 root = tk.Tk()
-root.title("Student Information Form")
+root.title("Student Admission Form")
 root.geometry("600x600")
 
 main_frame = tk.Frame(root, padx=20, pady=20)
